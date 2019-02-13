@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+        <script src="js/contador.js"></script>
+    </head>
+<body>
+
+    <div ng-app="contador" ng-controller="contadorCont as cont">
+        
+        <h1>Contador</h1>
+        <h2>Vamos a contar?</h2>
+
+        <input type="text" ng-model="cont.numero"/>
+
+        <br/>
+        <input type="button" value="+" ng-click="cont.sumar()"/>
+        <input type="button" value="-"ng-click="cont.restar()"/>
+
+        <h2>Totales:</h2>
+        <p>Llevamos contando: <span>{{cont.total}}</span></p>
+ 
+
+    </div>
+
+
+</body>
+</html>
