@@ -2,17 +2,26 @@
 <html lang="en" ng-app>
 <head>
 <meta charset="UTF-8">
-<title>Ej de AngularJS</title>
+    <title>Ej de AngularJS</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
 </head>
 <body> 
-    
-   
-<div ng-app>
-        <input type="text" ng-model="dato" />
+       
+    <div data-ng-app>
+        <input type="text" data-ng-model="dato" />
         {{dato}}
-        <input type="button" value="hola" ng-click="dato='hola'" />
-</div>
+        <input type="button" value="hola" data-ng-click="dato='hola'" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+        <h1>{{ 1 + 1}}</h1>
+
+        {{ "Hola " + "que tal" }}
+
+        <input type="text" data-ng-model="precio" />
+        Precio: {{ precio | number:2 }}
+    </div>  
+    
+
+
 </body>
 </html>
